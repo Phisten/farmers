@@ -10,6 +10,9 @@ namespace B03_homework
     {
         static void Main(string[] args)
         {
+            //hw3 請將函式內兩個變數內的數值交換(程式執行後leftNumber和rightNumber的數值交換 與執行前不同)
+            b03_swap();
+
             //hw2 請把nums陣列內的五個變數用for迴圈設定好亂數數值
             b03_array();
             
@@ -68,6 +71,22 @@ namespace B03_homework
             //判斷並輸出顯示使用者與電腦選擇的數字 誰比較大,或是相等
 
 
+        }
+        static void b03_swap()
+        {
+            //請將函式內兩個變數內的數值交換
+            //程式執行後leftNumber和rightNumber的數值交換 與執行前不同
+            Random rnd = new Random();
+            int leftNumber = rnd.Next();
+            int rightNumber = rnd.Next();
+            Console.WriteLine("leftNumber = {0} , rightNumber = {1}", leftNumber, rightNumber);
+
+            Console.WriteLine("swap");
+            // ----------------- 請補完程式碼 -----------------
+
+
+            // ------------------------------------------------
+            Console.WriteLine("leftNumber = {0} , rightNumber = {1}", leftNumber, rightNumber);
         }
     }
 }
