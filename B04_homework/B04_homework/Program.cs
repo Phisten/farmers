@@ -168,7 +168,7 @@ namespace B04_homework
         /// </summary>
         static void sort_N_Number()
         {
-
+            int A = 0;
         }
     }
 }
