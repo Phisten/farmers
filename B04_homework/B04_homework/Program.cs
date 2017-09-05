@@ -26,6 +26,9 @@ namespace B04_homework
                 case 3:
                     miningGame();
                     break;
+                case 4:
+                    sort_N_Number();
+                    break;
                 default:
                     Console.WriteLine("Homework %d not found",HomeworkIndex);
                     break;
@@ -159,5 +162,13 @@ namespace B04_homework
             itemName[indexTemp++] = "探測器";
         }
         //-------------------------------------------------------------------------------------------------------------------
+
+        /// <summary>
+        /// 
+        /// </summary>
+        static void sort_N_Number()
+        {
+
+        }
     }
 }
