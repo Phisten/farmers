@@ -10,7 +10,7 @@ namespace B04_homework
     {
         static void Main(string[] args)
         {
-            int HomeworkIndex = 3; //修改索引數字選擇進行測試的題目
+            int HomeworkIndex = 1; //修改索引數字選擇進行測試的題目
 
             //switch語法會依據右方括弧內變數來執行對應的case-break程式碼區段
             //  當沒有case與switch右邊括號內變數相符時,會執行default內的程式碼
@@ -59,7 +59,7 @@ namespace B04_homework
         static void sort_3number()
         {
             int num1 = 0, num2 = 0, num3 = 0;
-
+            num1 = 123131213;
 
             Console.WriteLine(num1);
             Console.WriteLine(num2);
