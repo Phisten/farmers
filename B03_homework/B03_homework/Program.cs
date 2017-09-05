@@ -11,31 +11,42 @@ namespace B03_homework
         static void Main(string[] args)
         {
             //hw3 請將函式內兩個變數內的數值交換(程式執行後leftNumber和rightNumber的數值交換 與執行前不同)
-            b03_swap();
+            //b03_swap();
 
             //hw2 請把nums陣列內的五個變數用for迴圈設定好亂數數值
             b03_array();
-            
+
             //hw1 請依照註解完成程式
-            b03_rnd();
+            //b03_rnd();
+            Console.ReadLine();
         }
 
         static void b03_array()
         {
             Random rnd = new Random();
 
-            int[] nums = new int[5];
-
+            int[] nums = new int[11];
+            //陣列長度 減少為4
             //--------------------------------------------------
+            /*
             nums[0] = rnd.Next(10);
             nums[1] = rnd.Next(10);
             nums[2] = rnd.Next(10);
             nums[3] = rnd.Next(10);
             nums[4] = rnd.Next(10);
+            nums[5] = rnd.Next(10);
+            nums[6] = rnd.Next(10);
+            nums[7] = rnd.Next(10);
+            nums[8] = rnd.Next(10);
+            nums[9] = rnd.Next(10);
+            nums[10] = rnd.Next(10);
+            */
             //--------------------------------------------------
+            
 
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i <= 10 ; i++)
             {
+                nums[i] = rnd.Next(10);
                 Console.WriteLine(nums[i]);
             }
             //Console.WriteLine(nums[0]);
@@ -83,10 +94,15 @@ namespace B03_homework
 
             Console.WriteLine("swap");
             // ----------------- 請補完程式碼 -----------------
-
-
+            
+            int Temporary1 = leftNumber;
+            int Temporary2 = rightNumber;
+            leftNumber  = Temporary2;
+            rightNumber = Temporary1;
+            
             // ------------------------------------------------
             Console.WriteLine("leftNumber = {0} , rightNumber = {1}", leftNumber, rightNumber);
+            Console.ReadLine();
         }
     }
 }
