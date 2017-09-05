@@ -168,7 +168,13 @@ namespace B04_homework
         /// </summary>
         static void sort_N_Number()
         {
-            int A = 0;
+
+            //衝突測試
+            for (int i = 5 - 1; i >= 0; i--)
+            {
+
+            }
+
         }
     }
 }
