@@ -67,21 +67,33 @@ namespace B03_homework
             //Console.WriteLine(num4);
             //Console.WriteLine(num5);
         }
+
         static void b03_rnd()
         {
             Random rnd = new Random();
             //讓使用者輸入一個數值  範圍在0~9
             //若不在這個範圍內,警告使用者 或者 後續程式跳過
+            int ipt = int.Parse(Console.ReadLine());
+            if (0 <= ipt && ipt <= 9)
+            {
+                //電腦取一個範圍0~9的亂數,存在變數內
+                int ai = rnd.Next(10);
 
+                //判斷並輸出顯示使用者與電腦選擇的數字 誰比較大,或是相等
+                if (ipt > ai)
+                {
+                    Console.WriteLine("ipt > ai");
+                }
+                else if (ipt < ai)
+                {
+                    Console.WriteLine("ipt < ai");
+                }
+                else
+                {
+                    Console.WriteLine("ipt == ai");
+                }
 
-
-            //電腦取一個範圍0~9的亂數,存在變數內
-
-
-
-            //判斷並輸出顯示使用者與電腦選擇的數字 誰比較大,或是相等
-
-
+            }
         }
         static void b03_swap()
         {
